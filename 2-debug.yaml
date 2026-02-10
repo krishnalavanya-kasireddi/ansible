@@ -1,0 +1,6 @@
+- name: hi devops team
+  hosts: web
+  tasks:
+  - name: print hi devops team
+    ansible.builtin.debug:
+      msg: "hi devops team"

@@ -1,0 +1,8 @@
+- name: install and run Apache
+  hosts: web
+  become: yes
+  tasks:
+  - name: install Apache
+    ansible.builtin.package:
+      name: Apache
+      state: present

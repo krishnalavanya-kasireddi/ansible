@@ -1,0 +1,34 @@
+- name: prac on conditions
+  hosts: local  
+  connection: local 
+  vars:
+    a: 30
+    b: 20
+  tasks:
+  - name: compare a and b
+    ansible.builtin.debug:
+     msg: "a is greater than b"
+    when: a > b 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

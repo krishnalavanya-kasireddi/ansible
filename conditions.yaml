@@ -16,7 +16,7 @@
   - name: compare a and b 
     ansible.builtin.debug:
       msg: "a is equal to b" 
-    when: a = b   
+    when: a == b   
 
 
 

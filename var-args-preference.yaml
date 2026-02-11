@@ -5,10 +5,10 @@
     name: "course devops88s from play"
   # vars_files:
   # - course.yaml
-  vars_prompt:
-  - name: name
-    prompt: please enter name
-    private: false
+  # vars_prompt:
+  # - name: name
+  #   prompt: please enter name
+  #   private: false
   tasks:
   - name: print name
     # vars:

@@ -1,0 +1,23 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    name: "lavanya"
+    role: devops
+    experience: 2
+    DETAILS:
+      course_trainer: "siva"
+      course_end: 4
+    TOPICS:
+    - Linux
+    - Shell
+    - Ansible
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: |
+        name: {{ name }}
+        role: {{ role }}
+        experience: {{ experience }}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}

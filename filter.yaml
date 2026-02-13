@@ -1,0 +1,7 @@
+- name: prac on filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: subject
+    ansible.builtin.debug:
+      msg: " Hi daws88s batch, {{ subject | default('welcome to ansible class') }}"

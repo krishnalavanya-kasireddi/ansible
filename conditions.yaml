@@ -5,15 +5,15 @@
     a: 10
     b: 20
   tasks:
-  - name: compare a and b
+  - name: a is greater than b
     ansible.builtin.debug:
      msg: "a is greater than b"
     when: a > b 
-  - name: compare a and b
+  - name: a is less than b
     ansible.builtin.debug:
       msg: "a is less than b"
     when: a < b
-  - name: compare a and b 
+  - name: a is equal to b
     ansible.builtin.debug:
       msg: "a is equal to b" 
     when: a == b   
